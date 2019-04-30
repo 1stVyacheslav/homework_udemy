@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', function() {
 				seconds, minutes, hours;
 				if (t > 0) {
 					seconds = Math.floor( (t/1000) % 60 ),
-					minutes = Math.floor( (t/60000)/60 ),
+					minutes = Math.floor( (t/60000) % 60 ),
 					hours = Math.floor( (t/(1000*60*60)) );
 				} else {
 					seconds = minutes = hours = 0;
